@@ -22,7 +22,7 @@ while True:
     print(f"Original message : {plain_text}")
     print(f"Original message : {cipher_text}")
 
-    cipher_text = input("Enter a message to dencrypt: ")
+    cipher_text = input("Enter a message to dncrypt: ")
     plain_text = ""
 
     for letter in cipher_text:
@@ -32,4 +32,5 @@ while True:
     print(f"Original message : {cipher_text}")
     print(f"Original message : {plain_text}")
     
+
 
