@@ -1,43 +1,33 @@
-#python: skip-file
-import math
-import time 
+#draw a holow heart from the inside like mine.  print("pretty corny)
+
+
+import math 
 from turtle import *
 
-def hearta(k):
+def heart(k):
     return 15*math.sin(k)**3
-def heartb(k):
-    return 12*math.cos(k) - 5*math.cos(2*k) - 2*math.cos(3*k) - math.cos(4*k)
-speed(100)
+def heart1(k):
+    return (13*math.cos(k)
+            - 5 * math.cos(2 * k)
+            -2 * math.cos(3 * k)
+            - math.cos(4 * k)
+
+speed(0)
 bgcolor("black")
-color("white")
 hideturtle()
-while True:
-    for scale in range(20, 30):
-        clear()
-        begin_fill()
-        for i in range(360):
-            x = hearta(math.radians(i)) * scale
-            y = heartb(math.radians(i)) * scale
-            goto(x, y)
-        end_fill()
-        time.sleep(0.05)
+for i in range(0, 450):
+            goto(heart(i)*20, heart1(i)*20
+            for j in range(5):
+                 color("pink")
 
-    for scale in range(30, 20, -1):
-        clear()
-        begin_fill()
-        for i in range(360):
-            x = hearta(math.radins(i)) * scale
-            y = heartb(math.radins(i)) * scale 
-            goto(x, y)
-        end_fill()
-        time.sleep(0.05)
-    done()
-
-
-    
-
-
+done()
 
 
 
     
+
+
+
+
+
+
