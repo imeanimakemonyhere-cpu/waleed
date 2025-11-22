@@ -8,9 +8,9 @@ def heart(k):
     return 15*math.sin(k)**3
 def heart1(k):
     return (13*math.cos(k)
-            - 5 * math.cos(2 * k)
-            - 2 * math.cos(3 * k)
-            - math.cos(4 * k)
+      - 5 * math.cos(2 * k)
+      - 2 * math.cos(3 * k)
+      - math.cos(4 * k)
 
 speed(0)
 bgcolor("black")
@@ -25,6 +25,7 @@ done()
 
 
     
+
 
 
 
