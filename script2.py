@@ -1,58 +1,50 @@
-import random   # module for randomness
-
-def spin_row(symbols):
-    """Return a random row of 3 symbols"""
-    return [random.choice(symbols) for _ in range(3)]
-
-def main():
-    balance = 100
-    symbols = ["🍒", "🍌", "🍊", "⭐"]
-
-    print("Welcome to Python Slots!")
-    print("You start with $100.\n")
-
-    while balance > 0:
-        print(f"Current balance: ${balance}")
-        bet = input("Place your bet amount: ")
-
-        # check if bet is a number
-        if not bet.isdigit():
-            print("Please enter a valid number.\n")
-            continue
-
-        bet = int(bet)
-
-        # check bet conditions
-        if bet > balance:
-            print("Insufficient funds, try again.\n")
-            continue
-        if bet <= 0:
-            print("Bet must be greater than 0.\n")
-            continue
-
-        # subtract bet
-        balance -= bet
-
-        # spin the slot machine
-        row = spin_row(symbols)
-        print(" | ".join(row))
-
-        # simple payout rule: all 3 match → win double
-        if row[0] == row[1] == row[2]:
-            win = bet * 2
-            balance += win
-            print(f"🎉 Jackpot! You won ${win}!\n")
-        else:
-            print("No match, better luck next time!\n")
-
-    print("Game over! You ran out of money.")
-
-if __name__ == "__main__":
-    main()
+#will i get better someday?? maybe...............................
 
 
 
+class Shape:
+    def __init__(self, color, is_filled):
+        self.color = color
+        self.is_filled = is_filled
+    def describe(self):
+        print(f"It is {self.color} and {'filled' if self.is_filled else 'not filled'}")
 
+class Circle(Shape) :
+    def __init__(self, color, is_filled, radius):
+        super().__init__(color, is_filled)
+        self.radius = radius
+    def describe(self):   
+        super().describe()
+        print(f"It is a circle with an area of {3.14 * self.radius * self.radius}cm^2")
+
+class Square(Shape):
+    def __init__(self, color, is_filled, width):
+        super().__init__(color, is_filled)
+        self.width = width
+    def describe(self):
+        super().describe()
+        print(f"It is a Square with an area of {self.width * self.width}cm^2")
+
+class Triangle(Shape):
+    def __init__(self, color, is_filled, width, height):
+        super().__init__(color, is_filled)
+        self.width = width
+        self.height = height
+    def describe(self):
+        super().describe()
+        print(f"It is a Triangle with an area of {self.width * self.height / 2}cm^2")
+
+circle = Circle(color="red", is_filled=True, radius=5)
+square = Square(color="blue", is_filled=False, width=10)
+triangle = Triangle(color="green", is_filled=True, width=11, height=7)
+
+circle.describe()
+square.describe()
+triangle.describe()
+
+#print(circle.color)
+#print(circle.is_filled)
+#print(f"{circle.radius}cm")
 
 
         
