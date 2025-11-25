@@ -1,5 +1,5 @@
 #Gussing game:
-#This code made me felt like i am getting better.......................
+#This code made me feel like i am getting better.......................
 
 import random
 
@@ -62,5 +62,6 @@ def main():
         
 if __name__ == "__main__":
     main()
+
 
 
