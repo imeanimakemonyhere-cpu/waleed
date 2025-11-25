@@ -7,8 +7,8 @@ chars = list(chars)
 key = chars.copy()
 
 random.shuffle(key)
-
-while True:
+                          
+while True:                   # encrypt Message:
     plain_text = input("Enter a message to encrypt (q to quit): ")
     if plain_text.upper() == "Q":
         print("GOODBYE....")
@@ -21,7 +21,7 @@ while True:
     
     print(f"Original message : {plain_text}")
     print(f"Original message : {cipher_text}")
-
+                             # decrypt Mesaage:
     cipher_text = input("Enter a message to decrypt: ")
     plain_text = ""
 
@@ -32,6 +32,7 @@ while True:
     print(f"Original message : {cipher_text}")
     print(f"Original message : {plain_text}")
     
+
 
 
 
