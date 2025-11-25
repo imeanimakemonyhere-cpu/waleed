@@ -16,7 +16,7 @@ speed(0)
 bgcolor("black")
 hideturtle()
 for i in range(0, 450):
-            goto(heart(i)*20, heart1(i)*20
+            goto(heart(i)*20, heart1(i)*20)
             for j in range(5):
                  color("pink")
 
@@ -25,6 +25,7 @@ done()
 
 
     
+
 
 
 
