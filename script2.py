@@ -1,4 +1,5 @@
 #will i get better someday?? maybe...............................
+#super(): used in a chiled class to call methods from parent calss.
 
 
 
@@ -48,3 +49,4 @@ triangle.describe()
 
 
         
+
