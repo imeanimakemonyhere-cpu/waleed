@@ -1,4 +1,4 @@
-#draw a holow heart from the inside like mine.  print("pretty corny)
+
 
 import math 
 from turtle import *
