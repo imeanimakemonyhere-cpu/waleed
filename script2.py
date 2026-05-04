@@ -1,5 +1,4 @@
-#will i get better someday??...............................
-#super(): used in a chiled class to call methods from parent class.
+
 
 
 
