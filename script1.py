@@ -1,5 +1,4 @@
-#Gussing game:
-#This code made me feel like i am getting better.......................
+
 
 import random
 
