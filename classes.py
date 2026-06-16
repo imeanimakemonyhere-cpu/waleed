@@ -28,7 +28,7 @@ class Circle(Shape):
 
     @property
     def area(self):
-        return math.pi * self.radius ** 2
+        return math.pi * self.radius **2 
 
     def __repr__(self):
         return f"Circle(radius={self.radius})" 
